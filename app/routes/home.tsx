@@ -44,7 +44,7 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
             </div>
           </header>
 
-          <section className="mb-10">
+          <section className="mb-10 text-center">
             <div className="prose max-w-none text-gray-300">
               <p className="mb-3">
                 CrawlStop.com is designed to test web crawlers' ability to respect crawling controls and anti-scraping measures. This site implements various deterrents and access controls to
@@ -53,9 +53,9 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
             </div>
           </section>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-10">
-            <div>
-              <div className="flex items-center mb-4">
+          <div className="grid lg:grid-cols-2 gap-8 mb-10 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-4">
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center mr-3">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -69,27 +69,27 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                 <h3 className="text-xl font-semibold text-white">Anti-Crawling Features</h3>
               </div>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Restrictive robots.txt directives</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Rate limiting and access controls</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>No-index meta tags</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Crawling deterrents</span>
                 </li>
               </ul>
             </div>
 
-            <div>
-              <div className="flex items-center mb-4">
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -98,19 +98,19 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                 <h3 className="text-xl font-semibold text-white">Test Your Crawler</h3>
               </div>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Respect robots.txt restrictions</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Handle rate limiting gracefully</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Comply with no-index directives</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Recognize access controls</span>
                 </li>
