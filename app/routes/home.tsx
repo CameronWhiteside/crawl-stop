@@ -37,14 +37,14 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         {/* Human-readable content */}
         <main>
-          <header className="text-center mb-12">
+          <header className="mb-12">
             <div className="flex items-center justify-center mb-4 flex-col sm:flex-row">
               <img src="/assets/crawl-stop.svg" alt="CrawlStop Logo" className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-0 sm:mr-4" />
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight text-center">CrawlStop.com</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">CrawlStop.com</h1>
             </div>
           </header>
 
-          <section className="mb-10 text-center">
+          <section className="mb-10">
             <div className="prose max-w-none text-gray-300">
               <p className="mb-3">
                 CrawlStop.com is designed to test web crawlers' ability to respect crawling controls and anti-scraping measures. This site implements various deterrents and access controls to
@@ -53,9 +53,9 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
             </div>
           </section>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-10 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-4">
+          <div className="grid lg:grid-cols-2 gap-8 mb-10 max-w-4xl">
+            <div>
+              <div className="flex items-center mb-4">
                 <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center mr-3">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -69,27 +69,27 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                 <h3 className="text-xl font-semibold text-white">Anti-Crawling Features</h3>
               </div>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Restrictive robots.txt directives</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Rate limiting and access controls</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>No-index meta tags</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-red-600 mr-3 text-lg">•</span>
                   <span>Crawling deterrents</span>
                 </li>
               </ul>
             </div>
 
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-4">
+            <div>
+              <div className="flex items-center mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -98,117 +98,117 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                 <h3 className="text-xl font-semibold text-white">Test Your Crawler</h3>
               </div>
               <ul className="space-y-2 text-gray-300">
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Respect robots.txt restrictions</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Handle rate limiting gracefully</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Comply with no-index directives</span>
                 </li>
-                <li className="flex items-center justify-center">
+                <li className="flex items-center">
                   <span className="text-blue-600 mr-3 text-lg">•</span>
                   <span>Recognize access controls</span>
                 </li>
               </ul>
             </div>
           </div>
+
+          {/* Copyright Footer */}
+          <footer className="border-t border-gray-700 pt-8 mt-12">
+            <div className="text-center text-gray-400 text-sm">
+              <p>© {new Date().getFullYear()} CrawlStop.com. Built for testing crawler compliance.</p>
+              <p className="mt-1">
+                Open source and available on{" "}
+                <a
+                  href="https://github.com/CameronWhiteside/crawl-stop"
+                  className="text-blue-400 hover:text-blue-300 underline hover:no-underline transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </footer>
         </main>
+      </div>
 
-        {/* Copyright Footer */}
-        <footer className="border-t border-gray-700 pt-8 mt-12">
-          <div className="text-center text-gray-400 text-sm">
-            <p>© {new Date().getFullYear()} CrawlStop.com. Built for testing crawler compliance.</p>
-            <p className="mt-1">
-              Open source and available on{" "}
-              <a
-                href="https://github.com/CameronWhiteside/crawl-stop"
-                className="text-blue-400 hover:text-blue-300 underline hover:no-underline transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </p>
-          </div>
-        </footer>
-
-        {/* Machine-readable structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
+      {/* Machine-readable structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "CrawlStop.com",
+            description: "CrawlStop.com is designed to test web crawlers' compliance with anti-scraping measures and crawling restrictions. Features various deterrents and access controls.",
+            url: "https://crawlstop.com",
+            author: {
+              "@type": "Organization",
               name: "CrawlStop.com",
-              description: "CrawlStop.com is designed to test web crawlers' compliance with anti-scraping measures and crawling restrictions. Features various deterrents and access controls.",
-              url: "https://crawlstop.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "CrawlStop.com",
+            },
+            datePublished: "2024-01-01",
+            dateModified: new Date().toISOString().split("T")[0],
+            mainEntity: {
+              "@type": "TechArticle",
+              headline: "CrawlStop.com - Anti-Crawling Test Site",
+              description: "Test your web crawler's compliance with anti-scraping measures and crawling restrictions.",
+              articleBody:
+                "CrawlStop.com serves as a testing environment for web crawlers to validate their compliance with anti-scraping measures and crawling restrictions. The site implements various deterrents and access controls to discourage automated access.",
+              keywords: ["anti-crawling", "web scraping protection", "crawler blocking", "access controls", "rate limiting", "crawling deterrents"],
               author: {
                 "@type": "Organization",
                 name: "CrawlStop.com",
               },
-              publisher: {
-                "@type": "Organization",
-                name: "CrawlStop.com",
-              },
-              datePublished: "2024-01-01",
-              dateModified: new Date().toISOString().split("T")[0],
-              mainEntity: {
-                "@type": "TechArticle",
-                headline: "CrawlStop.com - Anti-Crawling Test Site",
-                description: "Test your web crawler's compliance with anti-scraping measures and crawling restrictions.",
-                articleBody:
-                  "CrawlStop.com serves as a testing environment for web crawlers to validate their compliance with anti-scraping measures and crawling restrictions. The site implements various deterrents and access controls to discourage automated access.",
-                keywords: ["anti-crawling", "web scraping protection", "crawler blocking", "access controls", "rate limiting", "crawling deterrents"],
-                author: {
-                  "@type": "Organization",
-                  name: "CrawlStop.com",
-                },
-                about: {
-                  "@type": "SoftwareApplication",
-                  applicationCategory: "Testing Environment",
-                  operatingSystem: "Web-based",
-                  offers: {
-                    "@type": "Offer",
-                    price: "0",
-                    priceCurrency: "USD",
-                  },
+              about: {
+                "@type": "SoftwareApplication",
+                applicationCategory: "Testing Environment",
+                operatingSystem: "Web-based",
+                offers: {
+                  "@type": "Offer",
+                  price: "0",
+                  priceCurrency: "USD",
                 },
               },
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "USD",
-              },
-              additionalType: "TestingEnvironment",
-              sitePurpose: "Test crawler compliance with restrictions",
-              targetAudience: "Developers & researchers",
-              contentFeatures: [
-                "Restrictive robots.txt directives",
-                "Rate limiting and access controls",
-                "No-index meta tags",
-                "Crawling deterrents",
-                "Anti-scraping measures",
-                "Access control testing",
-              ],
-            }),
-          }}
-        />
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+            additionalType: "TestingEnvironment",
+            sitePurpose: "Test crawler compliance with restrictions",
+            targetAudience: "Developers & researchers",
+            contentFeatures: [
+              "Restrictive robots.txt directives",
+              "Rate limiting and access controls",
+              "No-index meta tags",
+              "Crawling deterrents",
+              "Anti-scraping measures",
+              "Access control testing",
+            ],
+          }),
+        }}
+      />
 
-        <div style={{ display: "none" }}>
-          <div id="crawler-metadata">
-            <meta name="site-purpose" content="Test crawler compliance with restrictions" />
-            <meta name="content-type" content="Anti-crawling test environment" />
-            <meta name="target-audience" content="Developers & researchers" />
-            <meta name="test-features" content="robots-txt-restrictions,rate-limiting,access-controls,no-index-tags,crawling-deterrents" />
-            <meta name="expected-behavior" content="respect-restrictions,handle-rate-limiting,comply-with-directives,recognize-controls" />
-            <meta name="site-version" content={loaderData.version} />
-            <meta name="last-updated" content={loaderData.timestamp} />
-          </div>
+      <div style={{ display: "none" }}>
+        <div id="crawler-metadata">
+          <meta name="site-purpose" content="Test crawler compliance with restrictions" />
+          <meta name="content-type" content="Anti-crawling test environment" />
+          <meta name="target-audience" content="Developers & researchers" />
+          <meta name="test-features" content="robots-txt-restrictions,rate-limiting,access-controls,no-index-tags,crawling-deterrents" />
+          <meta name="expected-behavior" content="respect-restrictions,handle-rate-limiting,comply-with-directives,recognize-controls" />
+          <meta name="site-version" content={loaderData.version} />
+          <meta name="last-updated" content={loaderData.timestamp} />
         </div>
       </div>
     </div>

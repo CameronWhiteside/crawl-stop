@@ -12,7 +12,7 @@ body {
 
 /* Container for content layout */
 .container {
-  @apply flex flex-col items-center min-h-screen;
+  @apply flex flex-col min-h-screen;
 }
 
 /* Ensure text is white in dark mode */
