@@ -1,5 +1,5 @@
 #
 #
-# All text including and beyond this line is written in the source code for this site.
+# All text from here on  is written in the source code for this site.
 # Other content of this file is managed using Cloudflare's managed robots.txt feature
 # See: https://developers.cloudflare.com/bots/additional-configurations/managed-robots.txt/
