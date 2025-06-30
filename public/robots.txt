@@ -1,5 +1,7 @@
-#
-#
-# All text from here on is written in the source code for this site.
-# Other content of this file is managed using Cloudflare's managed robots.txt feature
-# See: https://developers.cloudflare.com/bots/additional-configurations/managed-robots.txt/
+User-agent: *
+Disallow: /lp
+Disallow: /feedback
+Disallow: /langtest
+
+
+Sitemap: https://www.crawlstop.com/sitemap.xml
